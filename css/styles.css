@@ -1,0 +1,187 @@
+body{
+    overflow-x: hidden;
+}
+
+#gallery::before,
+#about::before,
+#contact::before,
+#smiles::before{
+  display: block;
+  content: "";
+  height: 40px;
+  margin: -40px 0 0;
+}
+
+.navbar-nav li:hover{
+    border-bottom: whitesmoke;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    opacity: 1.5;
+}
+
+/*---GALLERY----*/
+
+
+#gallery{
+    min-height: 100vh;
+    width: 100%;
+    font-family: Candara;
+    font-style: italic;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+}
+@keyframes animate
+{
+    0%{
+        transform: perspective(1500px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1500px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*24deg)) translateZ(600px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#gallery h2{
+    font-family: Candara;
+    text-align: center;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/*-------------------------------*/
+
+
+
+/*-------------CONTACT--------------*/
+
+
+#contact{
+    background: rgba(0, 0, 0, 0.445);
+    min-height: 100vh;
+}
+#contact .contactinfo{
+    width: 100%;
+    padding: 2%;
+    height: 100%;
+}
+#contact .contactinfo h2{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    font-family: fantasy;
+}
+#contact .contactinfo .info{
+    padding-top: 2%;
+    text-align: justify;
+    padding-left: 2%;
+}
+#contact .contactinfo .info li{
+    display: inline-block;
+    margin-left: 2%;
+}
+#contact .contactinfo .info li span:nth-child(1) i{
+    margin-left:2%;
+    color: whitesmoke;
+    opacity: 0.5;
+}
+#contact .contactinfo .info li p{
+    padding: 1%;
+    color: whitesmoke;
+    opacity: 0.5;
+    margin-left: 3%;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+}
+#contact .contactinfo .info li:hover span:nth-child(1) i,
+#contact .contactinfo .info li:hover p{
+    opacity: 1;
+    text-align: left;
+}
+
+.con-social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    transition: all .25s ease;
+    /* margin-left: -12px;
+    margin-right: -12px; */
+}
+button:active {
+    transform: scale(.85);
+}
+.bg {
+    position: absolute;
+    width: 60px;
+    background: white;
+    height: 60px;
+    border-radius: 25px;
+    pointer-events: none;
+    box-shadow: 0px 8px 35px 0px rgba(65, 53, 214, .25);
+}
+button i {
+    color: black;
+    pointer-events: none;
+    font-size: 1.8rem;
+    z-index: 10;
+    position: relative;
+}
+
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border-radius: 10px;
+}
+
+/*---------------------------------------------*/
