@@ -2,15 +2,6 @@ body{
     overflow-x: hidden;
 }
 
-#gallery::before,
-#about::before,
-#contact::before,
-#smiles::before{
-  display: block;
-  content: "";
-  height: 40px;
-  margin: -40px 0 0;
-}
 
 .navbar-nav li:hover{
     border-bottom: whitesmoke;
