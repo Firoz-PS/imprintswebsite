@@ -1,5 +1,5 @@
 body{
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 
@@ -127,7 +127,7 @@ body{
 }
 button {
     width: 150px;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,13 +151,19 @@ button:active {
     border-radius: 50%;
     pointer-events: none;
 }
-
+button:hover .bg{
+    background-color: #affc41;
+}
+button:hover i{
+    opacity: 1;
+}
 button i {
     color: black;
     pointer-events: none;
     font-size: 1rem;
     z-index: 10;
     position: relative;
+    opacity: 0.8;
 }
 
 .map-container-6{
