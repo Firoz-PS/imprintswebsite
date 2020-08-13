@@ -127,7 +127,7 @@ body{
 }
 button {
     width: 150px;
-    height: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,17 +145,17 @@ button:active {
 }
 .bg {
     position: absolute;
-    width: 60px;
-    background: white;
-    height: 60px;
-    border-radius: 25px;
+    width: 40px;
+    background: rgb(201, 196, 196);
+    height: 40px;
+    border-radius: 50%;
     pointer-events: none;
-    box-shadow: 0px 8px 35px 0px rgba(65, 53, 214, .25);
 }
+
 button i {
     color: black;
     pointer-events: none;
-    font-size: 1.8rem;
+    font-size: 1rem;
     z-index: 10;
     position: relative;
 }
