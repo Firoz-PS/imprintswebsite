@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body{
     overflow-x: hidden!important;
 }
@@ -10,6 +12,11 @@ body{
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
     opacity: 1.5;
+}
+
+.abouttitle{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
 }
 
 /*---GALLERY----*/
@@ -118,6 +125,10 @@ body{
 #contact .contactinfo .info li:hover p{
     opacity: 1;
     text-align: left;
+}
+
+.conttitle{
+    font-family: 'Lobster', cursive;
 }
 
 .con-social-btns {
