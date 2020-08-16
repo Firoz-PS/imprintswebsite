@@ -4,7 +4,7 @@ body{
 
 
 .navbar-nav li:hover{
-    border-bottom: #00bbf9;
+    border-bottom: #ef476f;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-right-radius: 2px;
@@ -152,7 +152,7 @@ button:active {
     pointer-events: none;
 }
 button:hover .bg{
-    background-color: #00bbf9;
+    background-color: #ef476f;
 }
 button:hover i{
     opacity: 1;
