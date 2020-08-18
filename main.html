@@ -18,16 +18,38 @@
         body{
             overflow-x: hidden;
         }
+        .fp-controlArrow{
+            size: 10vh;
+            top: 50%!important;
+            opacity: 1!important;
+        }
+        @media (max-width: 575.98px) { 
+          .fp-controlArrow{
+            size: 10vh;
+            top: 90%!important;
+            opacity: 0.5!important;
+        }
+        }
+        .fp-prev{
+                border-color:transparent #ef476f transparent transparent!important;
+                left: 50px!important;
+                border-width: 28.5px 24px 28.5px 0!important;
+        }
+        .fp-next{
+                border-color:transparent transparent transparent #ef476f !important;
+                right: 50px!important;
+                border-width: 28.5px 0 28.5px 24px!important;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar" style="background-color: #240112; color: white; border-bottom: 3px solid #ef476f;">
         <a class="navbar-brand" href="#home"><img class="img-fluid" src="images/1592892302703.png" style="height: 40px;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-          aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4" >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
           <ul class="navbar-nav mr-auto smooth-scroll">
             <li class="nav-item">
               <a class="nav-link" href="#home">HOME</a>
@@ -40,6 +62,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#payment">DONATIONS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">CONTACT US</a>
@@ -64,8 +89,8 @@
     
     <div id="fullPage">
         <div class="section">
-            <div id="home" style="background: rgb(2,0,36);
-            background: linear-gradient(0deg,  #ef476f 4%, rgb(255, 255, 255) 33%); height: 92vh;margin-top: 8vh;">
+            <div style="background: rgb(2,0,36);
+            background: linear-gradient(0deg,  #ef476f 4%, rgb(255, 255, 255) 33%); height: 100vh;margin-top: 8vh;">
                 <div class="container">
                     <div class="row">
                         <img class="img-fluid" src="./images/IMPRINTS LOGO 1.png" height="500px" style="padding-top: 100px;">
@@ -74,7 +99,7 @@
             </div>
         </div>
         <div class="section">
-            <div id="about" style="position: relative;height: 100vh; background-color: #240112; color: white;">
+            <div style="position: relative;height: 100vh; background-color: #240112; color: white;">
            
                 <div class="container h-100 d-flex aboutcont">
                   <div class="row align-self-center">
@@ -110,9 +135,113 @@
             </h1>        
         </div>
         <div class="section">
-            <h1>
-                Gallery
-            </h1>        
+          <div class="d-block d-sm-none" style="height:100vh;margin-top: 20vh;">
+              <div class="col-12" id="swiper">
+                  <h2>IMPRINTS GALLERY</h2><br><br>
+                  <div class="col-sm-12 col-xs-12">
+                      <center>
+                      <div class="box">
+                        <span style="--i:1;"><img src="images/Imprints gallery/img1.png"></span>
+                        <span style="--i:2;"><img src="images/Imprints gallery/img2.jpg"></span>
+                        <span style="--i:3;"><img src="images/Imprints gallery/img3.jpg"></span>
+                        <span style="--i:4;"><img src="images/Imprints gallery/img4.jpg"></span>
+                        <span style="--i:5;"><img src="images/Imprints gallery/img5.jpg"></span>
+                        <span style="--i:6;"><img src="images/Imprints gallery/img6.jpg"></span>
+                        <span style="--i:7;"><img src="images/Imprints gallery/img7.jpg"></span>
+                        <span style="--i:8;"><img src="images/Imprints gallery/img8.jpg"></span>
+                        <span style="--i:9;"><img src="images/Imprints gallery/img9.jpg"></span>
+                        <span style="--i:10;"><img src="images/Imprints gallery/img10.jpg"></span>
+                        <span style="--i:11;"><img src="images/Imprints gallery/img11.jpg"></span>
+                        <span style="--i:12;"><img src="images/Imprints gallery/img12.jpg"></span>
+                        <span style="--i:13;"><img src="images/Imprints gallery/img13.png"></span>
+                        <span style="--i:14;"><img src="images/Imprints gallery/img14.png"></span>
+                        <span style="--i:15;"><img src="images/Imprints gallery/img15.jpeg"></span>
+                      </div>            
+                      </center>            
+                  </div>
+              </div>
+          </div> 
+          <div class="d-none d-sm-block" style="height:100vh;margin-top: 10vh;">
+            <div class="container-fluid">
+              <div class="row ">
+                <div class="col-12" style="width: 100%;">
+                  <iframe src="nan.html" class="frame"
+                    frameborder="0" style="width: 100%;height: 100vh;" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>     
+        </div>
+        <div class="section" style="background-image:linear-gradient(to bottom,#240112,#240112b2  )">
+            <div class="container">
+                <div class="slide" style="width: 100%;color:aliceblue; background-image: url(./images/download1.png);background-position-x: right;background-blend-mode: screen; background-size: contain;background-repeat: no-repeat;">
+
+                  <h2>
+                    We accept Donations from individuals who are willing to help us in this endeavour
+                  </h2>
+                  <h1 style="text-align: center;justify-content: center;font-size: 10vh;">
+                    PROCEED
+                    <i style="text-align: right;justify-content: center;font-size: 10vh;" class="fa fa-arrow-right fa-4x"></i>
+
+                  </h1>
+
+                </div>
+                <div class="slide" style="margin-top:5vh ;">
+                  <nav class="d-none d-md-block" aria-label="breadcrumb" style="margin-left: 10%;margin-right: 10%;">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page"><a href="#">Step 1</a></li>
+                    </ol>
+                  </nav>
+                  <ul class="list-group" style="background: transparent;">
+                    <li class="list-group-item active">PLEASE READ THE FOLLOWING INFORMATIONS CAREFULLY!</li>
+                    <li class="list-group-item"><p class="d-none d-sm-block">INSTRUCTION 1</p>After reading these instructions please go to step 3 and click on the button.</li>
+                    <li class="list-group-item"><p class="d-none d-sm-block">INSTRUCTION 2</p>You will see a window where you must fill the purpose of payment as -"spreading thousand smiles" or "Imprints" and enter the amount being donated. After that click the pay button.                  </li>
+                    <li class="list-group-item"><p class="d-none d-sm-block">INSTRUCTION 3</p>In the new window please fill in the details regarding your name, email and phone number. </li>
+                    <li class="list-group-item"><p class="d-none d-sm-block">INSTRUCTION 4</p>Then you can select a mode of payment and do the payment online. </li>
+                    <li class="list-group-item"><p class="d-none d-sm-block">INSTRUCTION 5</p>You will be awarded with a certificate of appreciation from imprints via email for your kind donation.</li>
+                  </ul>
+                </div>
+                <div class="slide">
+                  <nav class="d-none d-md-block" aria-label="breadcrumb" style="margin-left: 10%;margin-right: 10%;">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Step 1</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Step 2</li>
+                    </ol>
+                  </nav>
+                  <center>
+                    <div class="btn-group-vertical col-12" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-primary">
+                          <div class="razorpay-embed-btn col-12" style="padding: 2%;" data-url="https://pages.razorpay.com/pl_FMIObzu0EdyaxK/view" data-text="Pay Now" data-color="#528FF0" data-size="medium">
+                            <script>
+                              (function(){
+                                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                                rzp && rzp.init && rzp.init()}})();
+                            </script>
+                          </div> 
+                          <h2 class="d-none d-md-block">
+                            For Spreading Thousand Smiles
+                          </h2>                         
+                      </button><br><br>
+                      <button type="button" class="btn btn-success">
+                        <div class="razorpay-embed-btn" style="padding: 2%;" data-url="https://pages.razorpay.com/pl_F7X7hmDubEFC0g/view" data-text="Donate Now" data-color="#528FF0" data-size="medium">
+                          <script>
+                            (function(){
+                              var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                              if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                              s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                              rzp && rzp.init && rzp.init()}})();
+                          </script>
+                        </div>
+                        <h2 class="d-none d-md-block">
+                          General Donation
+                        </h2> 
+                      </button>
+                    </div>
+                  </center>
+                </div>
+            </div>
         </div>
         <div class="section">
             <div style="height: 100vh; vertical-align: middle;background-color: #240112;">
@@ -226,13 +355,19 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="./jquery.hislide.js" ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
     <script>
         new fullpage('#fullPage',{
-            autoscrolling:true,
+            autoscrolling:false,
             navigation:true,
-            anchors:['home','about','smiles','gallery','contact'],
-            navigationTooltips:['Home','About Us','Smiles','Gallery','Contact Us'],
+            anchors:['home','about','smiles','gallery','payment','contact'],
+            navigationTooltips:['Home','About Us','Smiles','Gallery','Payment','Contact Us']
         })
     </script>
 </body>
