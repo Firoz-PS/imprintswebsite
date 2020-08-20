@@ -6,7 +6,7 @@ body{
 
 
 .navbar-nav li:hover{
-    border-bottom: #ef476f;
+    border-bottom: #f11045;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-right-radius: 2px;
@@ -17,6 +17,33 @@ body{
 .abouttitle{
     font-family: 'Lobster', cursive;
     font-size: 80px;
+}
+
+.rou{
+    position: absolute;
+    height:110vh;
+    right:0;
+    width:500px;
+    background-image: url("/images/masthead.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 30% 50%;
+    border-bottom-left-radius: 30% 50%;
+    border-left: 20px solid white;
+  }
+
+.smile{
+    background-image: url("/images/smilesbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.lighttint{
+    background: rgba(243, 243, 243, 0.877);
+    height: 100%;
+    width: 100%;
 }
 
 /*---GALLERY----*/
@@ -163,7 +190,7 @@ button:active {
     pointer-events: none;
 }
 button:hover .bg{
-    background-color: #ef476f;
+    background-color: #f11045;
 }
 button:hover i{
     opacity: 1;
@@ -197,7 +224,7 @@ button i {
 }
 
 .msect{
-    border-right: 3px solid #ef476f;
+    border-right: 3px solid #f11045;
 }
 
 .cbut button{
@@ -252,7 +279,7 @@ button i {
 
 .msect{
     border-right: none;
-    border-bottom: 3px solid #ef476f;
+    border-bottom: 3px solid #f11045;
 }
 
 .msect h5{
@@ -305,3 +332,74 @@ button i {
 }
 
 }
+
+/* ...................................gallery carousel.......................... */
+
+.hi-slide{
+    position: relative;
+     
+  } 
+              
+  .hi-slide .hi-next,
+  .hi-slide .hi-prev 
+              { 
+                position:relative;
+                top:35vh;
+                width: 40px;
+                height: 40px;      
+                  border-radius: 50%;    
+                line-height: 40px;
+                text-align: center; 
+                cursor: pointer;
+                background-color: black; 
+                color: red;               
+                transition: all 0.6s;
+                font-size: 20px; 
+                  font-weight: bold;
+              }
+             .hi-slide .hi-next:hover, 
+              .hi-slide .hi-prev:hover 
+              {
+              opacity: 1; 
+              background-color: #fff;  
+              }
+      
+              .hi-slide  ul
+                      { 
+                          list-style: none; 
+                           position: relative;
+                           top: 20vh;
+                           left:100px;
+                          /*width: 754px; 
+                          height: 292px; 
+                          margin: 0;
+                          padding-left: 0; */
+              }
+              
+              
+          .hi-slide  li {
+              overflow: hidden; 
+              position: absolute; 
+              z-index: 0; 
+              left: 377px;
+              top: 146px; 
+              width: 0; 
+              height: 0; 
+              margin: 0; 
+              padding: 0;
+              border: 3px solid #fff;              
+              background-color: #333; 
+              cursor: pointer; }
+              
+          .hi-slide  img {
+               width: 100%; 
+               height: 100%;
+             background-position: center;
+            }
+  
+          @media only screen and (max-width:1199px){
+  .hi-slide ul{
+    left:25px;
+  }
+          }
+  
