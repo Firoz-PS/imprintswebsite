@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 body{
     overflow-x: hidden!important;
@@ -15,8 +16,8 @@ body{
 }
 
 .abouttitle{
-    font-family: 'Lobster', cursive;
-    font-size: 80px;
+    font-family: 'Alata', sans-serif;
+    font-size: 60px;
 }
 
 .rou{
@@ -344,7 +345,6 @@ button i {
   .hi-slide .hi-prev 
               { 
                 position:relative;
-                top:35vh;
                 width: 40px;
                 height: 40px;      
                   border-radius: 50%;    
@@ -368,7 +368,6 @@ button i {
                       { 
                           list-style: none; 
                            position: relative;
-                           top: 20vh;
                            left:100px;
                           /*width: 754px; 
                           height: 292px; 
@@ -380,9 +379,7 @@ button i {
           .hi-slide  li {
               overflow: hidden; 
               position: absolute; 
-              z-index: 0; 
               left: 377px;
-              top: 146px; 
               width: 0; 
               height: 0; 
               margin: 0; 
@@ -402,4 +399,16 @@ button i {
     left:25px;
   }
           }
+
+
+          @media (min-width: 768px) {
+            .carousel-multi-item-2 .col-md-3 {
+            float: left;
+            width: 25%;
+            max-width: 100%; } }
+            
+            .carousel-multi-item-2 .card img {
+            border-radius: 2px;
+        height: 35vh;
+    width: 100%; }
   
