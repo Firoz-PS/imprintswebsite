@@ -3,7 +3,7 @@
     // 也就是说只会产生一个轮播图，这个函数的作用域只能分配给一个轮播图
     // 要求在调用本函数的时候务必把当前轮播图的根标签传递过来
     // 这里的形参 ele 就是某个轮播的根标签
-    var slide = function(ele,options) {
+    var slide2 = function(ele,options) {
         var $ele = $(ele);
         // 默认设置选项
         var setting = {
@@ -70,9 +70,10 @@
     // 找到要轮播的轮播图的根标签，调用 slide()
     $.fn.hiSlide = function(options) {
         $(this).each(function(index, ele) {
-            slide(ele,options);
+            slide2(ele,options);
         });
         // 返回值，以便支持链式调用
         return this;
     }
 })(jQuery);
+
