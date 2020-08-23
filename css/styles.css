@@ -9,6 +9,14 @@ body{
     overflow-x: hidden!important;
 }
 
+#fp-nav ul li a span{
+    background-color:#f11045 !important;
+}
+
+.fp-tooltip{
+    color:#f11045 !important;
+}
+
 .fixed-bottom{
     font-family: Cartoonist;
 }
