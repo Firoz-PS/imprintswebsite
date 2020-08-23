@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@font-face {
+    font-family: Cartoonist;
+    src: url(font/Qdbettercomicsans-jEEeG.ttf);
+}
 
 body{
     overflow-x: hidden!important;
+}
+
+.fixed-bottom{
+    font-family: Cartoonist;
 }
 
 
@@ -22,13 +30,15 @@ body{
 }
 
 .fd-btn{
-    opacity: 0.8;
+    opacity: 1;
     font-weight: 700;
     font-stretch: extra-expanded;
 }
 
 .fd-btn:hover{
-    opacity: 1;
+    color:rgb(0, 225, 255);
+    background-color: rgb(255, 255, 255)!important;
+    box-shadow:inset  3px 3px rgb(0, 225, 255); 
 }
 
 
@@ -54,6 +64,25 @@ body{
 .abouttitle{
     font-family: 'Alata', sans-serif;
     font-size: 60px;
+}
+.instructions h2{
+    font-family: 'Alata', sans-serif;
+    font-size: xx-large;     
+}
+.instructions ol{
+    font-size: x-large;
+}
+
+@media (max-width: 575.98px) { 
+    .abouttitle{
+        font-size: 50px;
+    }
+    .instructions h2{
+        font-size: medium!important;
+    }
+    .instructions ol{
+        font-size: small;
+    }
 }
 
 .rou{
@@ -293,20 +322,38 @@ button i {
     height: 80px;
 }
 
-/*-------------------<992px correction--------------------------*/
+.fp-next{
+    width: 300px !important;
+    border:none !important; 
+    height:50px !important; 
+    margin-top: 5px !important;
+    padding: 2px !important;  
+}
+
+.fp-prev{
+    width: 200px !important;
+    border:none !important; 
+    height:40px !important; 
+    margin-left: 10px !important;
+}
+
+.impcor img{
+    padding-top: 5px !important;
+}
 
 @media only screen and (max-width:991px){
 
 .darktint{
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color:rgba(0, 0, 0, 0.733) ;
     z-index: 2;
+    padding: 15px;
 }
 
 }
 
 /*-------------------<768px correction--------------------------*/
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
 
     nav .navbar-toggler{
         height:40px;
@@ -333,6 +380,15 @@ button i {
 font-size:14px;
 }
 
+.aboutcont img{
+   height:60px; 
+}
+
+.fp-next{
+    width: 200px !important; 
+    height:40px !important;  
+}
+
 .msect{
     border-right: none;
     border-bottom: 3px solid #f11045;
@@ -344,6 +400,11 @@ font-size:14px;
 
 .conttitle h4{
     font-size: 18px;
+    padding-top: 5px;
+}
+
+.abouttitle{
+    font-size: 30px;
     padding-top: 5px;
 }
 
