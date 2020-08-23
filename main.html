@@ -13,45 +13,30 @@
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
      <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">     <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
     <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
      <link rel="stylesheet" href="css/styles.css">
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
     <style>
-        .fp-controlArrow{
-            size: 10vh;
-            top: 50%!important;
-            opacity: 1!important;
-        }
-        @media (max-width: 575.98px) { 
-          .fp-controlArrow{
-            size: 10vh;
-            top: 90%!important;
-            opacity: 0.5!important;
-          }
-          .instructions h2{
-            font-size: larger!important;
-          }
-          .instructions ol{
-            font-size: medium!important;
-          }
-        }
+
         .fp-controlArrow.fp-prev{
           border-color: transparent transparent transparent transparent;
-         
+         left: unset;
+        }
+        .fp-controlArrow.fp-next{
+          border-color: transparent transparent transparent transparent;
+         right:unset;
         }
         .fp-prev{
           display: hidden;
+          position: unset;
         }
         .fp-next{
-                border-color:#ef476f #ef476f #ef476f #ef476f !important;
-                right: 50px!important;
-                border-width: 28.5px 0 28.5px 10vw!important;
-                display: ruby-text-container;
-                content: 'PAYMENT'!important;
-                color: azure;
+          position: unset;
         }
+
+
     </style>
 </head>
 <body>
@@ -76,9 +61,6 @@
               <a class="nav-link" href="#gallery">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#payment">DONATIONS</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#contact">CONTACT US</a>
             </li>
           </ul>
@@ -87,20 +69,6 @@
               Send Us Your Feedback
             </span>
           </div>
-          <!--<ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item" style="padding-right: 5%;">
-                <a href="https://instagram.com/ncore_mock_test?igshid=48szrfhzt214" target="_blank" class="nav-link waves-effect waves-light" ><i class="fa fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item" style="padding-right: 5%;padding-left: 5%;">
-                 <a href="https://www.facebook.com/Ncore20/" target="_blank" class="nav-link waves-effect waves-light"><i class="fa fa-facebook-f"></i>
-                </a>
-            </li>
-            <li class="nav-item" style="padding-left: 5%;">
-              <a href="mailto:Ncoreneetexam@gmail.com" target="_blank" class="nav-link waves-effect waves-light"><i class="fa fa-envelope"></i>
-             </a>
-            </li>
-          </ul>-->
         </div>
       </nav>
 
@@ -128,7 +96,7 @@
                   <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
                 </div>
                 <div class="md-form">
-                  <i class="fa fa-tag prefix grey-text"></i>
+                  <i class="far fa-comments prefix grey-text"></i>
                   <textarea type="text" id="Form-pass1" class="form-control validate md-textarea" rows="4"></textarea>
                   <label data-error="wrong" data-success="right" for="Form-pass1">Your Feedback or Message</label>
                 </div>
@@ -138,19 +106,19 @@
                 <p class="font-small font-bold dark-text text-right d-flex justify-content-center mb-3 pt-2"> or reach us through:</p>
                 <div class="row my-3 d-flex justify-content-center">
                   <a href="https://www.facebook.com/Ncore20/" class="col" target="_blank">
-                    <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fa fa-facebook-f text-center"></i></button>
+                    <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fab fa-facebook-f text-center"></i></button>
                   </a>
                   <a href="mailto:Ncoreneetexam@gmail.com" class="col" target="_blank">
-                    <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fa fa-instagram"></i></button>
+                    <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fab fa-instagram"></i></button>
                   </a>
                   <a href="mailto:ncoreneetexam@gmail.com" class="col" target="_blank">
-                    <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fa fa-google"></i></button>
+                    <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fab fa-google"></i></button>
                   </a>
                 </div>
               </div>
               <div class="modal-footer mx-5 pt-3 mb-1" style="background-color: rgba(0, 0, 0, 0.733);">
-                <p class="font-small white-text d-flex justify-content-end">Haven't donated yet : <a class="blue-text ml-1" href="#smiles/1" >
-                   Donate Now </a></p>
+                <p class="font-small white-text d-flex justify-content-end">Haven't donated yet : <a target="_blank" href="https://pages.razorpay.com/pl_F7X7hmDubEFC0g/view" class="blue-text ml-1">
+                    Donate Now</a></p>
               </div>
             </div>
           </div>
@@ -166,12 +134,17 @@
         <div class="section" id="main">
             <div style="height: 100vh;margin-top: 8vh; background-color: rgba(255, 255, 255, 0.774);">
                 <div class="container">
-                    <div class="row" style="height: 100vh;position: relative;">
-                      <div class="col-12 zoom" style="height: 100vh;position: absolute;">
+                    <div class="row d-none d-md-block" style="height: 100vh;position: relative;">
+                      <div class="col-12 zoom " style="height: 100vh;position: absolute;">
                         <img class="img-fluid" src="./images/IMPRINTS LOGO (1).png" height="100vh" style="padding-top: 15vh;">
                       </div>
-                      
                     </div>
+                    <div class="row d-block d-md-none" style="height: 100vh;position: relative;">
+                      <div class="col-12 zoom" style="height: 100vh;position: absolute;background: no-repeat url('/images/Fingerprint.png') top;background-size: contain;background-blend-mode: screen;">
+                        <img class="img-fluid" src="./images/bgxs.png" height="100vh" style="padding-top: 15vh;">
+                      </div>
+                    </div>
+ 
                 </div>
             </div>
         </div>
@@ -211,10 +184,12 @@
             <div class="container  h-100 d-flex">
               <div class="slide">
               <div class="row align-self-center" >
+                <div class="col-12 col-md-6">
+                  <div class="row">
                 <div class="col-12"> 
                   <h1 class="abouttitle">Our Initiative</h1>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12">
                   <p>
                     <b>
                       IMPRINTS is a charitable organization that has been operating in our college for many years.
@@ -228,18 +203,27 @@
                     </b>
                   </p>
                 </div>
-                <div class="col-12 col-md-6 ">
-                  <img class="img-fluid mb-auto ml-auto" src="/images/smiles1-removebg-preview.png">
+                </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-12 d-none d-md-block">
+                      <img class="img-fluid" src="/images/smiles1-removebg-preview.png">
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="button" class="fp-controlArrow fp-next btn" style="width: 300px;padding:2px;border:none; height:50px; background-color: #f11045; color: white; margin-top: 5px;"><strong>Register Now</strong></button>
+                    </div>
+                  </div>
                 </div>
                 </div>
               </div>
-              </div>
+              
               <div class="slide instructions">
                 <div class="row">
                   <div class="col-12">
-                    <h2 class="abouttitle" style="font-size: x-large;">PLEASE READ THE FOLLOWING INFORMATIONS CAREFULLY!</h2>
-                    <ol style="font-size: large; ">
-                      <li> After reading these instructions please click on the button below.</li>
+                    <h2>PLEASE READ THE FOLLOWING INFORMATIONS CAREFULLY!</h2>
+                    <ol>
+                      <li> After reading these instructions please click on the 'Pay Now' button below.</li>
                       <li> You will see a window where you must fill the purpose of payment as -"spreading thousand smiles" or "Imprints" and enter the amount being donated. After that click the pay button.                  </li>
                       <li> In the new window please fill in the details regarding your name, email and phone number. </li>
                       <li> Then you can select a mode of payment and do the payment online. </li>
@@ -247,7 +231,6 @@
                     </ol>
                   </div>
                     <div class="col-12 ">
-                      
                         <div class="razorpay-embed-btn text-center" data-url="https://pages.razorpay.com/pl_FMIObzu0EdyaxK/view" data-text="Pay Now" data-color="#f11045" data-size="medium">
                           <script>
                             (function(){
@@ -257,19 +240,22 @@
                               rzp && rzp.init && rzp.init()}})();
                           </script>
                         </div>                          
-                   
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="button" class="fp-controlArrow fp-prev btn" style="width: 200px;border:none; height:40px; background-color: #10cff1; margin-left: 10px;"><strong>Back</strong></button>
                     </div>
                 </div> 
              </div>
             </div>
-          </div>        
+          </div> 
+        </div>       
         
 
 
         <div class="section" style=" height:100vh;">
             <div class="d-block d-md-none">
                 <div class="col-12" id="swiper">
-                    <h2>IMPRINTS GALLERY</h2><br><br>
+                  <br><br><br><br><h3 class="abouttitle pb-2">IMPRINTS GALLERY</h3>
                     <div class="col-sm-12 col-xs-12">
                         <center>
                         <div class="box">
@@ -287,7 +273,7 @@
                           <span style="--i:12;"><img src="images/Imprints gallery/img12.jpg"></span>
                           <span style="--i:13;"><img src="images/Imprints gallery/img13.png"></span>
                           <span style="--i:14;"><img src="images/Imprints gallery/img14.png"></span>
-                          <span style="--i:15;"><img src="images/Imprints gallery/img15.jpeg"></span>
+                          <span style="--i:15;"><img src="images/Imprints gallery/img15.jpg"></span>
                         </div>            
                         </center>            
                     </div>
@@ -296,7 +282,7 @@
 
             <div class="d-none d-md-block container align-self-center" style="height: 100vh;overflow-x: hidden;overflow-y: hidden;">
               <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel" >
-                <h2>IMPRINTS GALLERY</h2><br><br>
+                <br><br><h2 class="pb-2 abouttitle">IMPRINTS GALLERY</h2>
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
                     <div class="col-md-3 mb-3">
@@ -402,65 +388,6 @@
               </div>
             </div>
           </div>
-
-          <div class="section" style="background-color: #240112; color: white;">
-            <div class="container">
-               <div class="slide" style="width: 100%;">
-                 <h2>
-                   We accept Donations from individuals who are willing to help us in this endeavour
-                 </h2>
-                 <h1 style="text-align: center;justify-content: center;font-size: 40px;">
-                   PROCEED
-                   <i style="text-align: right;justify-content: center;font-size: 40px;" class="fa fa-arrow-right fa-4x"></i>
-                 </h1>
-               </div>
-               <div class="slide instructions">
-                  <h2 style="font-size: xx-large;">PLEASE READ THE FOLLOWING INFORMATIONS CAREFULLY!</h2>
-                 <ol style="font-size: x-large;">
-                   <li> After reading these instructions please go to step 3 and click on the button.</li>
-                   <li> You will see a window where you must fill the purpose of payment as -"spreading thousand smiles" or "Imprints" and enter the amount being donated. After that click the pay button.                  </li>
-                   <li> In the new window please fill in the details regarding your name, email and phone number. </li>
-                   <li> Then you can select a mode of payment and do the payment online. </li>
-                   <li> You will be awarded with a certificate of appreciation from imprints via email for your kind donation.</li>                     
-                 </ol>
-               </div>
-               <div class="slide">
-                 <center>
-                   <div class="btn-group-vertical col-12" role="group" aria-label="Basic example">
-                     <button type="button" class="btn btn-primary">
-                         <div class="razorpay-embed-btn col-12" style="padding: 2%;" data-url="https://pages.razorpay.com/pl_FMIObzu0EdyaxK/view" data-text="Pay Now" data-color="#528FF0" data-size="medium">
-                           <script>
-                             (function(){
-                               var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-                               if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-                               s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-                               rzp && rzp.init && rzp.init()}})();
-                           </script>
-                         </div> 
-                         <h2 class="d-none d-md-block">
-                           For Spreading Thousand Smiles
-                         </h2>                         
-                     </button><br><br>
-                     <button type="button" class="btn btn-success">
-                       <div class="razorpay-embed-btn" style="padding: 2%;" data-url="https://pages.razorpay.com/pl_F7X7hmDubEFC0g/view" data-text="Donate Now" data-color="#528FF0" data-size="medium">
-                         <script>
-                           (function(){
-                             var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-                             if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-                             s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-                             rzp && rzp.init && rzp.init()}})();
-                         </script>
-                       </div>
-                       <h2 class="d-none d-md-block">
-                         General Donation
-                       </h2> 
-                     </button>
-                   </div>
-                 </center>
-               </div>
-           </div> 
-          </div>
-
           
           <div class="section">
             <div style="height: 100vh; vertical-align: middle;background-color: #240112;">
@@ -490,7 +417,7 @@
                               <div class="bg" ></div>
                           </button>
                           <button >
-                              <i class="bx fa fa-whatsapp fa-1x"></i>
+                              <i class="bx fab fa-whatsapp fa-1x"></i>
                               <div class="bg" ></div>
                           </button>
                         </span>
@@ -502,7 +429,7 @@
                                 <div class="bg"></div>
                             </button>
                             <button>
-                                <i class="bx fa fa-whatsapp fa-1x"></i>
+                                <i class="bx fab fa-whatsapp fa-1x"></i>
                                 <div class="bg"></div>
                             </button>
                         </span>
@@ -512,7 +439,7 @@
                     <div class="row">
                       <div class="con-social-btns col-12 cbut2">
                           <button class="col">
-                              <i class="bx fa fa-instagram fa-2x"></i>
+                              <i class="bx fab fa-instagram fa-2x"></i>
                               <div class="bg"></div>
                           </button>
                           <button class="col">
@@ -520,11 +447,11 @@
                               <div class="bg"></div>
                           </button>  
                           <button class="col">
-                              <i class="bx fa fa-facebook-f fa-2x"></i>
+                              <i class="bx fab fa-facebook-f fa-2x"></i>
                               <div class="bg"></div>
                           </button>  
                           <button class="col">
-                              <i class="bx fa fa-linkedin fa-2x"></i>
+                              <i class="bx fab fa-linkedin fa-2x"></i>
                               <div class="bg"></div>
                           </button>                              
                       </div>
@@ -541,7 +468,7 @@
                   </span>
                   <div class="col-12 col-md-3 con-social-btns">
                       <button>
-                          <i class="bx fa fa-instagram fa-1x" style="opacity: 1;"></i>
+                          <i class="bx fab fa-instagram fa-1x" style="opacity: 1;"></i>
                           <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
                       </button>
                       <button>
@@ -549,11 +476,11 @@
                           <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
                       </button>  
                       <button>
-                          <i class="bx fa fa-facebook-f fa-1x" style="opacity: 1;"></i>
+                          <i class="bx fab fa-facebook-f fa-1x" style="opacity: 1;"></i>
                           <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
                       </button>  
                       <button>
-                          <i class="bx fa fa-linkedin fa-1x" style="opacity: 1;"></i>
+                          <i class="bx fab fa-linkedin fa-1x" style="opacity: 1;"></i>
                           <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
                       </button> 
                   </div>
@@ -565,7 +492,18 @@
             </div>       
           </div>
           
-          
+    </div>   
+    
+    <footer class="fixed-bottom" style="text-align: end;font-style: italic;">
+      <div class="fixed-action-btn ml-auto p-1" style="opacity: 0.8;">
+        <a class="btn-floating btn-lg red pb-0" target="_blank" href="https://pages.razorpay.com/pl_F7X7hmDubEFC0g/view"  style="color: black;">
+          <h5><i class="fas fa-donate"></i> Donate Now</h5>
+        </a>
+      </div>
+    </footer>
+
+    
+
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -581,8 +519,8 @@
       new fullpage('#fullPage',{
           autoscrolling:false,
           navigation:true,
-          anchors:['home','about','smiles','gallery','payment','contact'],
-          navigationTooltips:['Home','About Us','Smiles','Gallery','Payment','Contact Us']
+          anchors:['home','about','smiles','gallery','contact'],
+          navigationTooltips:['Home','About Us','Smiles','Gallery','Contact Us']
       }) ;
     </script>
 

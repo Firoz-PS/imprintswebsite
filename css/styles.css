@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@font-face {
+    font-family: Cartoonist;
+    src: url(font/Qdbettercomicsans-jEEeG.ttf);
+}
 
 body{
     overflow-x: hidden!important;
+}
+
+.fixed-bottom{
+    font-family: Cartoonist;
 }
 
 
@@ -21,14 +29,22 @@ body{
     }
 }
 
+@media (max-width: 575.98px) { 
+    #main img{
+        padding-top: 50vh!important;
+    }
+}
+
 .fd-btn{
-    opacity: 0.8;
+    opacity: 1;
     font-weight: 700;
     font-stretch: extra-expanded;
 }
 
 .fd-btn:hover{
-    opacity: 1;
+    color:rgb(0, 225, 255);
+    background-color: rgb(255, 255, 255)!important;
+    box-shadow:inset  3px 3px rgb(0, 225, 255); 
 }
 
 
@@ -54,6 +70,28 @@ body{
 .abouttitle{
     font-family: 'Alata', sans-serif;
     font-size: 60px;
+}
+.instructions h2{
+    font-family: 'Alata', sans-serif;
+    font-size: xx-large;     
+}
+.instructions ol{
+    font-size: x-large;
+}
+
+@media (max-width: 575.98px) { 
+    .abouttitle{
+        font-size: 50px;
+    }
+    .instructions h2{
+        font-size: medium!important;
+    }
+    .instructions ol{
+        font-size: small;
+    }
+    #main img{
+        padding-top: 30vh!important;
+    }
 }
 
 .rou{
