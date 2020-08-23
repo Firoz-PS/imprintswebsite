@@ -293,9 +293,20 @@ button i {
     height: 80px;
 }
 
+/*-------------------<992px correction--------------------------*/
+
+@media only screen and (max-width:991px){
+
+.darktint{
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+
+}
+
 /*-------------------<768px correction--------------------------*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
 
     nav .navbar-toggler{
         height:40px;
@@ -314,8 +325,12 @@ button i {
     font-size:14px;
 }
 
-.aboutcont img{
-   height:60px; 
+.smilecont h1{
+    font-size:30px;
+}
+
+.smilecont p{
+font-size:14px;
 }
 
 .msect{
