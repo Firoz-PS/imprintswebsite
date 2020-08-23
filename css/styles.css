@@ -17,6 +17,11 @@ body{
     color:#f11045 !important;
 }
 
+.PaymentButton{
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
 .fixed-bottom{
     font-family: Cartoonist;
 }
@@ -253,8 +258,6 @@ button {
     background: transparent;
     position: relative;
     transition: all .25s ease;
-    /* margin-left: -12px;
-    margin-right: -12px; */
 }
 button:active {
     transform: scale(.85);
