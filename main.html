@@ -19,38 +19,47 @@
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
     <style>
-        .fp-controlArrow{
+        /* .fp-controlArrow{
             size: 10vh;
-            top: 50%!important;
-            opacity: 1!important;
-        }
+            top: 50%;
+            opacity: 1;
+        } */
         @media (max-width: 575.98px) { 
-          .fp-controlArrow{
+          /* .fp-controlArrow{
             size: 10vh;
-            top: 90%!important;
-            opacity: 0.5!important;
-          }
+            top: 90%;
+            opacity: 0.5;
+          } */
           .instructions h2{
-            font-size: larger!important;
+            font-size: larger;
           }
           .instructions ol{
-            font-size: medium!important;
+            font-size: medium;
           }
         }
         .fp-controlArrow.fp-prev{
           border-color: transparent transparent transparent transparent;
-         
+         left: unset;
+        }
+        .fp-controlArrow.fp-next{
+          border-color: transparent transparent transparent transparent;
+         right:unset;
         }
         .fp-prev{
           display: hidden;
+          position: unset;
         }
         .fp-next{
+          position: unset;
+        }
+        /* .fp-next{
                 border-color:#ef476f #ef476f #ef476f #ef476f !important;
                 right: 50px!important;
                 border-width: 28.5px 0 28.5px 10vw!important;
                 content: 'PAYMENT'!important;
                 color: azure;
-        }
+        } */
+
     </style>
 </head>
 <body>
@@ -210,10 +219,12 @@
             <div class="container  h-100 d-flex">
               <div class="slide">
               <div class="row align-self-center" >
+                <div class="col-12 col-md-6">
+                  <div class="row">
                 <div class="col-12"> 
                   <h1 class="abouttitle">Our Initiative</h1>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12">
                   <p>
                     <b>
                       IMPRINTS is a charitable organization that has been operating in our college for many years.
@@ -227,18 +238,27 @@
                     </b>
                   </p>
                 </div>
+                </div>
+                </div>
                 <div class="col-12 col-md-6">
-                  <img class="img-fluid" src="/images/smiles1-removebg-preview.png">
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="img-fluid" src="/images/smiles1-removebg-preview.png">
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="button" class="fp-controlArrow fp-next btn" style="width: 300px;padding:2px;border:none; height:50px; background-color: #f11045; color: white; margin-top: 5px;"><strong>Register Now</strong></button>
+                    </div>
+                  </div>
                 </div>
                 </div>
               </div>
-              </div>
+              
               <div class="slide instructions">
                 <div class="row">
                   <div class="col-12">
                     <h2 class="abouttitle" style="font-size: x-large;">PLEASE READ THE FOLLOWING INFORMATIONS CAREFULLY!</h2>
                     <ol style="font-size: large; ">
-                      <li> After reading these instructions please click on the button below.</li>
+                      <li> After reading these instructions please click on the 'Pay Now' button below.</li>
                       <li> You will see a window where you must fill the purpose of payment as -"spreading thousand smiles" or "Imprints" and enter the amount being donated. After that click the pay button.                  </li>
                       <li> In the new window please fill in the details regarding your name, email and phone number. </li>
                       <li> Then you can select a mode of payment and do the payment online. </li>
@@ -246,7 +266,6 @@
                     </ol>
                   </div>
                     <div class="col-12 ">
-                      
                         <div class="razorpay-embed-btn text-center" data-url="https://pages.razorpay.com/pl_FMIObzu0EdyaxK/view" data-text="Pay Now" data-color="#f11045" data-size="medium">
                           <script>
                             (function(){
@@ -256,12 +275,15 @@
                               rzp && rzp.init && rzp.init()}})();
                           </script>
                         </div>                          
-                   
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="button" class="fp-controlArrow fp-prev btn" style="width: 200px;border:none; height:40px; background-color: #10cff1; margin-left: 10px;"><strong>Back</strong></button>
                     </div>
                 </div> 
              </div>
             </div>
-          </div>        
+          </div> 
+        </div>       
         
 
 
