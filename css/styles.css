@@ -26,6 +26,10 @@ body{
     width:initial !important;
 }
 
+.btn-info{
+    background-color: #f11045 !important;
+}
+
 .fixed-bottom{
     font-family: Cartoonist;
 }
@@ -53,9 +57,9 @@ body{
 }
 
 .fd-btn:hover{
-    color:rgb(0, 225, 255);
+    color:#f11045;
     background-color: rgb(255, 255, 255)!important;
-    box-shadow:inset  3px 3px rgb(0, 225, 255); 
+    box-shadow:inset  3px 3px #f11045; 
 }
 
 
