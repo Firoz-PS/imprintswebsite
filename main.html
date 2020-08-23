@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar" style="overflow-y: auto;min-height: 12vh; background-color: #240112; color: white; border-bottom: 3px solid #f11045">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar" style="overflow-y: auto;min-height: 10vh; background-color: #240112; color: white; border-bottom: 3px solid #f11045">
         <a class="navbar-brand" href="#home"><img class="img-fluid" src="images/1592892302703.png" style="height: 40px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,30 +85,33 @@
                 </button>
               </div>
               <div class="modal-body mx-4">
-                <div class="md-form">
-                  <i class="fa fa-user prefix grey-text"></i>
-                  <input type="text" id="Form-pass1" class="form-control validate" style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px" >
-                  <label data-error="wrong" data-success="right" for="Form-pass1"> &nbsp; Your Name</label>
-                </div>
-                <div class="md-form ">
-                  <i class="fa fa-envelope prefix grey-text"></i>
-                  <input type="email" id="Form-email1" class="form-control validate"  style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px">
-                  <label data-error="wrong" data-success="right" for="Form-email1"> &nbsp; Your email</label>
-                </div>
-                <div class="md-form">
-                  <i class="far fa-comments prefix grey-text"></i>
-                  <textarea type="text" id="Form-pass1" class="form-control validate md-textarea" rows="4" style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px"></textarea>
-                  <label data-error="wrong" data-success="right" for="Form-pass1"> &nbsp; Your Feedback or Message</label>
-                </div>
-                <div class="text-center mb-3">
-                  <button type="button" class="btn blue-gradient btn-block btn-rounded mr-auto ml-auto">Send my Feedback</button>
-                </div>
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSckCpmNnbBxaBqOgGyEAItjguRSda9dGBGQJCV-qgmkIDBAsw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                  <div class="md-form">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="entry.989038492" name="entry.989038492" required class="form-control validate" style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px;" >
+                    <label data-error="wrong" data-success="right" for="Form-pass1"> &nbsp; Your Name</label>
+                  </div>
+                  <div class="md-form ">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="entry.1950192440" name="entry.1950192440" required class="form-control validate"  style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px">
+                    <label data-error="wrong" data-success="right" for="Form-email1"> &nbsp; Your email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="far fa-comments prefix grey-text"></i>
+                    <textarea type="text" id="entry.1210502692" name="entry.1210502692" required class="form-control validate md-textarea" rows="4" style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px"></textarea>
+                    <label data-error="wrong" data-success="right" for="Form-pass1"> &nbsp; Your Feedback or Message</label>
+                  </div>
+                  <div class="text-center mb-3">
+                    <button type="submit" class="btn blue-gradient btn-block btn-rounded mr-auto ml-auto">Send my Feedback</button>
+                  </div>
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 <p class="font-small font-bold dark-text text-right d-flex justify-content-center mb-3 pt-2" style="color: white;"> or reach us through:</p>
                 <div class="row my-3 d-flex justify-content-center">
                   <a href="https://www.facebook.com/Ncore20/" class="col" target="_blank">
                     <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fab fa-facebook-f text-center"></i></button>
                   </a>
-                  <a href="mailto:Ncoreneetexam@gmail.com" class="col" target="_blank">
+                  <a href="#" class="col" target="_blank">
                     <button type="button" class="btn btn-white btn-rounded btn-block"><i class="fab fa-instagram"></i></button>
                   </a>
                   <a href="mailto:ncoreneetexam@gmail.com" class="col" target="_blank">
@@ -251,7 +254,7 @@
         <div class="section" style=" height:100vh;">
             <div class="d-block d-md-none">
                 <div class="col-12" id="swiper">
-                  <br><br><br><br><h3 class="abouttitle pb-2">IMPRINTS GALLERY</h3>
+                  <br><br><br><br><h3 class="abouttitle pb-2">IMPRINTS GALLERY</h3><br><br><br>
                     <div class="col-sm-12 col-xs-12">
                         <center>
                         <div class="box">
@@ -414,11 +417,13 @@
                     <div class="row cbut" style="color: rgb(201, 196, 196);">
                       <h5 class="col-12">Ummar Faris : 9207555913
                         <span class="con-social-btns">
-                          <button >
+                          <a href="tel:9207555913">
+                            <button class="m-2">
                               <i class="bx fa fa-phone fa-1x"></i>
-                              <div class="bg" ></div>
-                          </button>
-                          <button >
+                              <div class="bg" ></div> 
+                            </button>                             
+                          </a>
+                          <button class="m-2">
                               <i class="bx fab fa-whatsapp fa-1x"></i>
                               <div class="bg" ></div>
                           </button>
@@ -426,36 +431,40 @@
                       </h5>
                       <h5 class="col-12">Nadha Shafi : 8078009608
                         <span class="con-social-btns">
-                            <button>
-                                <i class="bx fa fa-phone fa-1x"></i>
-                                <div class="bg"></div>
-                            </button>
-                            <button>
-                                <i class="bx fab fa-whatsapp fa-1x"></i>
-                                <div class="bg"></div>
-                            </button>
+                          <a href="tel:8078009608">
+                            <button class="m-2">
+                              <i class="bx fa fa-phone fa-1x"></i>
+                              <div class="bg" ></div> 
+                            </button>                             
+                          </a>
+                          <button class="m-2">
+                              <i class="bx fab fa-whatsapp fa-1x"></i>
+                              <div class="bg"></div>
+                          </button>
                         </span>
                       </h5>
                     </div>
                     <div class="row conttitle"><h4 style="color: #f11045;">&emsp;Get Social</h4></div>
                     <div class="row">
                       <div class="con-social-btns col-12 cbut2">
-                          <button class="col">
-                              <i class="bx fab fa-instagram fa-2x"></i>
-                              <div class="bg"></div>
-                          </button>
-                          <button class="col">
-                              <i class="bx fa fa-envelope fa-2x"></i>
-                              <div class="bg"></div>
-                          </button>  
-                          <button class="col">
+                          <a href="https://www.facebook.com/Ncore20/" target="_blank">
+                            <button class="col ml-3 mr-3">
                               <i class="bx fab fa-facebook-f fa-2x"></i>
                               <div class="bg"></div>
-                          </button>  
-                          <button class="col">
-                              <i class="bx fab fa-linkedin fa-2x"></i>
+                            </button>  
+                          </a>
+                          <a href="#" target="_blank">
+                            <button class="col ml-3 mr-3">
+                              <i class="bx fab fa-instagram fa-2x"></i>
                               <div class="bg"></div>
-                          </button>                              
+                            </button>   
+                          </a>
+                          <a href="mailto:Ncoreneetexam@gmail.com" target="_blank">
+                            <button class="col ml-3 mr-3">
+                              <i class="bx fa fa-envelope fa-2x"></i>
+                              <div class="bg"></div>
+                            </button>    
+                          </a>                             
                       </div>
                     </div>
                   </div>
@@ -469,22 +478,30 @@
                     </a>
                   </span>
                   <div class="col-12 col-md-3 con-social-btns">
-                      <button>
+                    <a href="https://www.instagram.com/tensors_official/" target="_blank">
+                      <button class="col ml-3 mr-3">
                           <i class="bx fab fa-instagram fa-1x" style="opacity: 1;"></i>
-                          <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
-                      </button>
-                      <button>
+                          <div class="bg" style="background: rgb(22, 160, 132);"></div>
+                      </button>             
+                    </a>
+                    <a href="mailto:tensorsofficial@gmail.com" target="_blank">
+                      <button class="col ml-3 mr-3">
                           <i class="bx fa fa-envelope fa-1x" style="opacity: 1;"></i>
-                          <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
-                      </button>  
-                      <button>
+                          <div class="bg" style="background: rgb(22, 160, 132);"></div>
+                      </button>                
+                    </a>
+                    <a href="https://www.facebook.com/tensorsofficial" target="_blank">
+                      <button class="col ml-3 mr-3">
                           <i class="bx fab fa-facebook-f fa-1x" style="opacity: 1;"></i>
-                          <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
-                      </button>  
-                      <button>
-                          <i class="bx fab fa-linkedin fa-1x" style="opacity: 1;"></i>
-                          <div class="bg" style="width: 30px;height: 30px;background: rgb(22, 160, 132);"></div>
+                          <div class="bg" style="background: rgb(22, 160, 132);"></div>
                       </button> 
+                    </a>
+                    <a href="https://www.linkedin.com/company/53201198" target="_blank">
+                      <button class="col mr-3 ml-3">
+                          <i class="bx fab fa-linkedin fa-1x" style="opacity: 1;"></i>
+                          <div class="bg" style="background: rgb(22, 160, 132);"></div>
+                      </button>
+                    </a>
                   </div>
                   <div class="col-12 col-md-3 order-md-first" style="color: rgb(22, 160, 132); margin-top: auto; margin-bottom: auto;">
                     Copyright <i class="fa fa-copyright"></i> Tensors 2020
@@ -517,6 +534,13 @@
     <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+      $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Your submission has been processed...'+'<br><br>'+'Thank You for your Feedback/Message')
+        });
+      </script>
     <script>
       new fullpage('#fullPage',{
           autoscrolling:false,
