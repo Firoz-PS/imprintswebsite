@@ -78,7 +78,7 @@
 
         <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog " role="document">
-            <div class="modal-content form-elegant" style="background: url(./images/masthead.jpg);background-blend-mode: screen;">
+            <div class="modal-content form-elegant" style="background: url(./images/masthead.jpg);background-blend-mode: screen;background-position-x: center;">
               <div class="modal-header text-center">
                 <h3 class="modal-title mt-auto mb-auto dark-text ml-auto mr-auto" id="myModalLabel"><strong>Connect With Us</strong></h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: auto;">
@@ -91,6 +91,11 @@
                     <i class="fa fa-user prefix grey-text"></i>
                     <input type="text" id="entry.989038492" name="entry.989038492" required class="form-control validate" style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px" >
                     <label data-error="wrong" data-success="right" for="Form-pass1"> &nbsp; Your Name</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fa fa-mobile prefix grey-text"></i>
+                    <input type="tel" id="entry.1623478260" name="entry.1623478260" class="form-control validate" style="background-color: rgba(255, 255, 255, 0.76); border-radius:5px" >
+                    <label data-error="wrong" data-success="right" for="Form-pass1"> &nbsp; Your Mobile Number</label>
                   </div>
                   <div class="md-form ">
                     <i class="fa fa-envelope prefix grey-text"></i>
@@ -121,8 +126,9 @@
                 </div>
               </div>
               <div class="modal-footer mx-5 pt-3 mb-1" style="background-color: rgba(0, 0, 0, 0.733);">
-                <p class="font-small white-text d-flex justify-content-end">Haven't donated yet : <a target="_blank" href="https://pages.razorpay.com/pl_F7X7hmDubEFC0g/view" class="blue-text ml-1">
-                    Donate Now</a></p>
+                <p class="font-small white-text d-flex justify-content-end">Haven't donated yet : 
+                  <form><script src="https://cdn.razorpay.com/static/widget/payment-button.js" data-payment_button_id="pl_FUFtaBTF3XkJrq"></script> </form>
+                </p>
               </div>
             </div>
           </div>
@@ -520,7 +526,7 @@
           
     </div>   
     
-    <footer class="fixed-bottom razbtn" style="text-align: end;font-style: italic;">
+    <footer class="fixed-bottom razbtn p-1" style="text-align: end;font-style: italic;">
       <form><script src="https://cdn.razorpay.com/static/widget/payment-button.js" data-payment_button_id="pl_FUFtaBTF3XkJrq"> </script> </form>
     </footer>
 
