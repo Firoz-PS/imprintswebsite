@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@font-face {
-    font-family: Cartoonist;
-    src: url(font/Qdbettercomicsans-jEEeG.ttf);
-}
+
 
 body{
     overflow-x: hidden!important;
@@ -30,9 +27,22 @@ body{
     background-color: #f11045 !important;
 }
 
-.fixed-bottom{
-    font-family: Cartoonist;
-}
+
+.fp-controlArrow.fp-prev{
+    border-color: transparent transparent transparent transparent;
+   left: unset;
+  }
+  .fp-controlArrow.fp-next{
+    border-color: transparent transparent transparent transparent;
+   right:unset;
+  }
+  .fp-prev{
+    display: hidden;
+    position: unset;
+  }
+  .fp-next{
+    position: unset;
+  }
 
 
 .navbar-nav li:hover{
@@ -64,11 +74,11 @@ body{
 
 
 #main{
-    background: url("/images/bg/img1.png");
-    background-size: cover,contain;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-blend-mode: screen;
+    background: url("./images/img1.png");
+    background-size: cover,contain!important;
+    background-repeat: no-repeat!important;
+    background-position-x: right!important;
+    background-blend-mode: screen!important;
 }
 .img img{ width: 10%;opacity: 0.5; }
 .part1{ position: absolute; top: 13%; left: 6%; width: 12%}
@@ -111,7 +121,7 @@ body{
     height:110vh;
     right:0;
     width:500px;
-    background-image: url("/images/masthead.jpg");
+    background-image: url("./images/masthead.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
