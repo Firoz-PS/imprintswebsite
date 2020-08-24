@@ -19,6 +19,7 @@ b{
 .PaymentButton{
     margin-bottom: 4px;
     margin-right: 4px;
+    background: #f11045 !important;
 }
 
 .razbtn button{
