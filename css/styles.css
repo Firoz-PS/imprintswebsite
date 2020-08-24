@@ -8,6 +8,10 @@ body{
     background-color:#f11045 !important;
 }
 
+b{
+    font-weight: bold !important;
+}
+
 .fp-tooltip{
     color:#f11045 !important;
 }
@@ -92,14 +96,14 @@ body{
 /*-----------SMILES--------------*/
 .abouttitle{
     font-family: 'Alata', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
 }
 .instructions h2{
     font-family: 'Alata', sans-serif;
-    font-size: xx-large;     
+    font-size: 30px;     
 }
 .instructions ol{
-    font-size: x-large;
+    font-size: 16px;
 }
 
 @media (max-width: 575.98px) { 
@@ -418,7 +422,6 @@ font-size:14px;
 
 .msect{
     border-right: none;
-    border-bottom: 3px solid #f11045;
 }
 
 .msect h5{
