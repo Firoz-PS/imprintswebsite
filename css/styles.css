@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 
 body{
@@ -131,7 +129,7 @@ body{
   }
 
 #smile{
-    background-image: url("/images/smilesbg.jpg");
+    background-image: url("/images/smilesbg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   height: 100vh;
