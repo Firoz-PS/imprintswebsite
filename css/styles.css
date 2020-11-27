@@ -481,6 +481,19 @@ font-size:14px;
 
 }
 
+/*-------------------<576px correction--------------------------*/
+
+@media only screen and (max-width:576px){
+
+    .ncoretitle h1{
+        padding-top: 70px;
+    }
+    .ncorecontent p{
+        font-size: 12px;
+    }
+}
+
+
 /* ...................................gallery carousel.......................... */
 
 
