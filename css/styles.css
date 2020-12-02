@@ -373,6 +373,16 @@ button i {
     padding-top: 5px !important;
 }
 
+.policylinks a{
+    text-decoration: none;
+    color:  rgb(201, 196, 196);
+    font-weight: lighter !important;
+}
+
+.policylinks a:hover{
+    color: #f11045;
+}
+
 @media only screen and (max-width:991px){
 
 .darktint{
